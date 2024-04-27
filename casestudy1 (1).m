@@ -19,7 +19,7 @@ T(round(Ny/2):end, :) = T_high;
 figure;
 
 % Plot initial temperature field 
-subplot(2, 2, 1);
+subplot(2, 1, 1);
 [X, Y] = meshgrid(linspace(0, Lx, Nx), linspace(0, Ly, Ny));
 contourf(X, Y, T', 250, 'LineStyle', 'none');
 colorbar;
@@ -37,7 +37,7 @@ for t = 1:Lt
 end
 
 % Plot final temperature field
-subplot(2, 2, 2);
+subplot(2, 1, 2);
 contourf(X, Y, T', 250, 'LineStyle', 'none');
 colorbar;
 title('Final Temperature Field');
